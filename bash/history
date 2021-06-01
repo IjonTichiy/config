@@ -1,0 +1,453 @@
+ls
+la
+cat .viminfo 
+ls -a
+vim
+vim .config/vim/vimrc.local 
+vim
+ls
+vim
+firefox
+MOZ_ENABLE_WAYLAND=1 firefox
+vim .bashrc
+vim .config/bash/alias 
+vim
+screen
+firefox
+vim
+pacman -R vim
+sudo pacman -R vim
+pacman -F vim
+pacman -S vim-airline
+ls
+ls -a
+mkdir .local/src/
+cmake
+find / -name cmake
+sudo find / -name cmake
+git clone http://github.com/vim/vim.git
+ls
+git clone http://github.com/vim/vim.git .local/src/vim
+ls
+pacman -S gcc cmake
+sudo pacman -S gcc cmake
+pacman -S clang 
+sudo pacman -S clang 
+vim
+sudo find / -name vim
+ll
+lla
+cd .local/src/vim/
+ls
+pacman -S make
+sudo pacman -S make
+./configure 
+./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-python3interp=yes --with-python3-config-dir=$(python3-config --configdir) -enable-perlinterp=yes --enable-luainterp --enable-cscope --prefix=/usr/.local/ 
+vim 
+..
+cd vim
+make VIMRUNTIMEDIR=~/.config/vim
+ll
+cd
+vim
+cd .local/src/vim/
+ls
+sudo make install
+ls
+ll /usr/.local/
+rm /usr/.local
+rm /usr/.local -r
+sudo rm /usr/.local -rf
+./configure --with-features=huge --enable-multibyte --enable-rubyinterp=yes --enable-python3interp=yes --with-python3-config-dir=$(python3-config --configdir) -enable-perlinterp=yes --enable-luainterp --enable-cscope --prefix=/usr/local/ 
+make 
+make VIMRUNTIMEDIR=~/.config/vim
+make install
+sudo make install
+vim
+cd
+vim .bashrc 
+/usr/local/bin/vim --version
+/usr/local/bin/vim .bashrc
+python3-config --configdir
+vim
+pacman -S wl-paste
+sudo pacman -S wl-paste
+sudo pacman -S wl-clipboard
+vim
+echo $VIMRUNTIME
+echo $VIM_RUNTIME
+vim
+exit
+vim
+screen
+vim 
+screen
+vim 
+screen
+vim
+vim
+vim
+pacman -S feh
+sudo pacman -S feh
+ls
+feh Downloads/491465.jpg 
+sudo pacman -R feh
+pacman -S imv
+sudo pacman -S imv
+imv -h
+imv Downloads/491465.jpg 
+vim
+firefox
+pacman -S weston
+sudo pacman -S weston
+westland
+weston 
+pacman -R weston
+sudo pacman -R weston
+psfedit
+pacman -S psfedit
+sudo pacman -S psfedit
+mkdir .config/dotfiles
+git clone http://github.com/thehellbean/dotfiles thehellbean.dotfiles
+ls
+rm -rf thehellbean.dotfiles/
+ls
+sudo find / -name source-code-pro
+sudo find / -name source*code
+git clone http://github.com/thehellbean/dotfiles .config/dotfiles/thehellbean.dotfiles
+vim
+firefox
+mkdir .config/sway/Images/
+mkdir .config/sway/images
+rm -r .config/sway/Images/
+mkdir .config/sway/images/wallpapers/
+mv Downloads/491465.jpg .config/sway/images/wallpapers/tree1.png
+swaymsg -t get-inputs
+swaymsg -t get_inputs
+swaymsg -t get_inputs | less
+vim 
+vim
+firefox
+ls
+ls -a
+lla
+ll
+ls
+sway
+screen
+firefox
+vim
+git status
+git diff
+wal -R
+pacman -S wal
+sudo pacman -S wal
+sudo pacman -S wal-e
+sudo pacman -S wal-git
+pacman -S python-pywal
+sudo pacman -S python-pywal
+wal -R
+cd .config/vim/plugins/
+
+vim
+pacman -S pywal
+sudo pacman -S pyw
+git clone http://github.com/dylanaraps/pywal ~/.local/src/pywal
+printf "%b" "\033]11;#ff0000\007
+"
+vim
+firefox
+cd .config/dotfiles/thehellbean.dotfiles/
+git status
+git diff sway/config
+screen
+cd
+screen
+vim
+pip install pywall
+pip install pywal
+pip3 install pywal
+python3
+pacman -S pip3
+sudo pacman -S pip3
+sudo pacman -S pip
+sudo pacman -S python-pip
+sudo pacman -S python3-pip
+sudo pacman -S python-pip3
+sudo pacman -S python-pip
+pip --version
+pip install pywal
+pacman -S venv
+sudo pacman -S venv
+sudo pacman -S python-venv
+pip install venv
+pacman -S python-virtualenv
+sudo pacman -S python-virtualenv
+venv
+
+source ~/.bashrc 
+mkdir $VENV
+virtualenv $VENV/core
+source \$VENV/core/
+ls \$VENV/core/
+python -m venv test
+virtualenv test
+sudo find / -name test
+ls
+rm test
+rm -rf test
+ls
+python -m venv -h
+pacman -S python-virtualenvwrapper
+sudo pacman -S python-virtualenvwrapper
+sudo passwd
+mkvirtualenv master
+deactivate
+rm -r .cache/virtualenvs/core/ .cache/virtualenvs/master
+mkvirtualenv main
+python
+which python
+pip install pywal
+pip install --upgrade pip
+wal --backend
+wal --theme
+wal --theme | less
+wal --theme sexy-monokai
+wal --theme
+wal --theme |less
+mkdir scripts
+mkdir scripts/bash
+man 5 sway
+git clone http://github.com/Xuyuanp/nerdtree-git-plugin ~/.config/vim/plugins/nerdtree-git-plugin.vim
+mv Downloads/*.jpg .config/sway/images/wallpapers/
+ls .config/sway/images/wallpapers/
+ls Downloads/
+wal -h
+wal -i "~/.config/sway/images/wallpapers"
+wal -i .config/sway/images/wallpapers/
+vim
+pip install pywal
+wal -i ".config/sway/images/wallpapers/tree1.png" 
+screen
+firefox
+screen
+curl -fsSl https://raw.githubusercontent.com/tridactyl/tridactyl/master/native/install.sh -o /tmp/trinativeinstall.sh && sh /tmp/trinativeinstall.sh 1.20.4
+sudo find . -name syntax
+mkdir .config/vim/syntax
+git clone https://github.com/tridactyl/vim-tridactyl .config/vim/syntax/
+mkdir .config/tridactyl
+pacman -S vim-ghost
+sudo pacman -S vim-ghost
+firefox -profilemanager
+unalias firefox
+firefox -profilemanager
+firefox -profile .config/mozilla/firefox/
+firefox
+firefox &
+echo $XDG_CONFIG_DIR
+vim 
+cd .local/src/qt5/
+ls build/
+rm build/my_configure.sh 
+ls
+./configure 
+cd build/
+firefox &
+firefox
+firefox
+;
+vim
+screen
+vim
+swaymsg open
+swaybar
+swaynag -h
+swaybar -h
+swaymsg -h
+waybar
+firefox
+waybar &
+grim
+pacman -S grim
+sudo pacman -S grim
+screen
+vim
+screen
+vim
+pacman -S waybar
+sudo pacman -S waybar
+sway
+screen
+sway
+vim 
+sway
+ll
+vim
+vim
+rm -r .config/vim/plugins/nerdtree-git-plugin.vim/
+rm -r .config/vim/plugins/nerdtree-git-plugin.vim/ -f
+vim
+pacman -S ctags
+sudo pacman -S ctags
+vim
+xdg-open
+perl
+perl -h
+git clone http://github.com/qt/qt5 .local/src/qt5
+git clone --recursive http://github.com/qt/qt5 .local/src/qt5
+cd .local/src/qt5/
+ls
+mkdir build
+cd build
+pacman -S github-cli git-latexdiff git-lfs
+sudo pacman -S github-cli git-latexdiff git-lfs
+cd ..
+git checkout 5.12
+git branch -l
+git branch -
+git checkout 5.15
+git checkout 5.12
+perl init-repository 
+cd build
+ls
+cmake ..
+ls ..
+..
+sudo find / -name llvm
+sudo pacman -S llvm
+sudo find / -name llvm
+which llvm-ar
+export LLVM_INSTALL_DIR=/usr/bin
+cd build/
+../configure help
+vim my_configure.sh
+:q
+../configure -
+..
+cat qtbase/mkspecs/
+ll
+./configure -release -prefix /usr/local/qt5/
+./configure -release -prefix /usr/local/qt5/vim
+./configure -release -prefix /usr/local/qt5/
+pacman -S gperf
+sudo pacman -S gperf
+./configure -release -prefix /usr/local/qt5/ -nomake tests -opensource -
+./configure -release -prefix /usr/local/qt5/ -nomake tests -opensource -qt-libjpeg -qt-libpng -pulseaudio -fontconfig -sqlite 
+sudo find / -name llvm
+ls usr/bin | grep llvm
+sudo ls /usr/bin | grep llvm
+export LLVM_INSTALL_DIR=/usr/bin/
+./configure -release -prefix /usr/local/qt5/ -nomake tests -opensource -qt-libjpeg -qt-libpng -pulseaudio -fontconfig -sqlite 
+sudo find / -name llvm-config
+hs
+echo $hs
+firefox
+swaymsg --help
+swaymsg -v
+swaymsg -q
+swaymsg --pretty
+firefox
+swaymsg -t get_inputs 
+vim
+python
+ipython
+python -h
+echo $PYTHONHOME
+echo PYTHONPATH
+echo $PYTHONPATH
+vim
+waybar
+git clone https://github.com/Timvde/UserChrome-Tweaks
+ls
+git clone https://github.com/Timvde/UserChrome-Tweaks .config/mozilla/
+git clone https://github.com/Timvde/UserChrome-Tweaks .config/mozilla/UserChrome-Tweaks
+firefox
+
+firefox
+vim
+slurp
+pacman -S slurp wl-copy jq notify-send
+sudo pacman -S slurp wl-copy jq notify-send
+sudo pacman -S slurp jq 
+grim
+grim -h
+ll
+imv 20210109_22h34m01s_grim.png 
+git clone https://github.com/swaywm/sway .local/src/sway
+hel
+pip install i3ipc
+pip --version
+sudo find / -name inactive-windows-transparency.py
+/usr/share/sway/scripts/inactive-windows-transparency.py -o .8
+/usr/share/sway/scripts/inactive-windows-transparency.py -o .3
+/usr/share/sway/scripts/inactive-windows-transparency.py -o .5
+/usr/share/sway/scripts/inactive-windows-transparency.py -o .6
+lock
+swaylock
+rm .config/sway/scripts/lock
+sway
+swaymsg exit
+bemenu-run
+pacman -S bemenu
+sudo pacman -S bemenu
+echo $TERM
+vim
+sway
+swaybar
+sway
+vim
+sway
+sudo find / -name transparency
+sudo find / -name *transpar*
+firefox
+sway
+waybar
+waybar &
+vim
+screen
+swaybar
+waybar
+waybar &
+firefox
+vim
+alacritty 
+alacritty --blur-background
+alacritty --help
+screen
+vim
+screen
+vim
+im
+vim
+cp /usr/share/sway/scripts/inactive-windows-transparency.py /usr/share/sway/scripts/autoname-workspaces.py .config/sway/scripts/
+vim
+firefox &
+firefox 
+ll
+sudo find / -name yay
+git clone https://aur.archlinux.org/way-launcher-desktop-git
+rm way-launcher-desktop-git/
+
+git clone https://aur.archlinux.org/sway-launcher-desktop-git .local/src/sway-launcher-desktop-git
+cd .local/src/sway-launcher-desktop-git/
+less PKGBUILD
+makepkg -si
+sway-launcher-desktop
+echo $XDG_CONFIG_HOME/autostart
+echo $XDG_CONFIG_HOME
+mkdir ~/.config/autostart/
+sudo find / -name xdg-shell
+git status
+ls
+sway-launcher-desktop
+ls
+pacman -U sway-launcher-desktop
+sudo pacman -U sway-launcher-desktop
+
+
+sway-launcher-desktop | alacritty 
+vim
+firefox
+screen
+cp -s /usr/share/sway/scripts/inactive-windows-transparency.py .local/bin
+vim .bashrc

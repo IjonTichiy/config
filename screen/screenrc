@@ -1,0 +1,36 @@
+altscreen on
+defbce on
+vbell off
+mousetrack on
+
+startup_message off
+
+escape ^||
+# register S ^A
+bindkey ";j" command
+
+defscrollback 100000
+termcapinfo xterm ti@:te@
+
+# get rid of silly xoff stuff
+bind s split
+bind x eval "command -c rsz" # enter resize mode
+bind x eval "command -c rsz" # enter resize mode
+bind X remove
+
+# use hjkl keys to resize regions
+bind -c rsz h eval "reseze -h -5" "command -c rsz"
+bind -c rsz j eval "resize -v -5" "command -c rsz"
+bind -c rsz k eval "resize -v +5" "command -c rsz"
+bind -c rsz l eval "resize -h +5" "command -c rsz"
+
+hardstatus alwaysfirstline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+# hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W}%c %{g}]'
+
+shelltitle '$ |bash'
+
+bind f eval "caption splitonly" "hardstatus ignore"
+bind F eval "caption splitonly" "hardstatus alwaysfirstline"
+
+bind r source ~/.config/screen/screenrc

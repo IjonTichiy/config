@@ -1,0 +1,101 @@
+#!/usr/bin/bash
+############################################################################### 
+#                                   bashrc
+############################################################################### 
+# This is the user specific startup configuration for non-login shells
+
+# Configuration environment:
+#######################################
+export ALACRITTYRC=$XDG_CONFIG_DIR/alacritty/alacritty.yml
+
+export BASHRC=~/.bashrc
+export BASH_PROFILE=~/.bash_profile
+export BASH_ALIAS=$XDG_CONFIG_DIR"/bash/alias"
+export BASH_HELPER=~/.local/share/bash/scripts/helper.sh
+
+# readline configuration file
+export INPUTRC=$XDG_CONFIG_DIR/readline/inputrc
+export LIQUIDPROMPTRC=$XDG_CONFIG_DIR/liquidprompt/liquidpromptrc
+
+export SCREENRC=~/.config/screen/screenrc
+
+export SWAYRC=$XDG_CONFIG_DIR/sway/config
+
+export TRIDACTYLRC=$XDG_CONFIG_DIR/tridactyl/tridactylrc
+
+export VIMRC=~/.vimrc
+export VIM_FILETYPES=$XDG_CONFIG_DIR/vim/filetype.vim
+export VIM_PLUGINS=$XDG_CONFIG_DIR/vim/plugins.vim
+export VIM_HELPERS=$XDG_CONFIG_DIR/vim/helper.vim
+
+
+# General
+############################################################################### 
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# # Some handy aliases
+if [[ -f ${BASH_ALIAS} ]]; then
+    source $BASH_ALIAS
+else 
+    echo '$BASH_ALIAS not found, skipping...'
+fi
+
+# Source some general helper functions
+if [[ -f $BASH_HELPER ]]; then
+    source $BASH_HELPER
+else
+    echo '$BASH_HELPER not found, skipping...'
+fi
+
+if [[ -f $LIQUIDPROMPTRC ]]; then 
+    source $LIQUIDPROMPTRC
+fi
+
+if [[ -f /usr/bin/virtualenvwrapper.sh ]]; then
+    source /usr/bin/virtualenvwrapper.sh
+fi
+
+
+# Settings
+############################################################################### 
+
+# Applications
+#######################################
+# Vim is the default editor
+export VISUAL=vim
+
+# Change location of .bash_history to not clutter $HOME
+HISTFILE=~/.cache/bash/history
+
+# Do not store duplicates in history
+HISTCONTROL=ignoredups
+
+# fix non-KDE desktop
+QT_QPA_PLATFORMTHEME=qt5ct
+
+# Directories for python environments
+WORKON_HOME=~/.cache/virtualenvs
+
+# Unlimited lines in history
+HISTSIZE=1000000000
+
+# Filesize limit of the history file
+HISTFILESIZE=10000 
+
+shopt -s histappend
+
+# Add some items to PATH
+#######################################
+pathadd /usr/local/bin
+pathadd ~/.local/bin
+pathadd ~/.local/share
+pathadd ~/.local/share/python/scripts
+
+# liquidprompt prefix to show running process in GNU screen window name
+LP_PS1_PREFIX="\[\\033k\\033\\\\\]"
+
+# Python specific
+############################################################################### 
+# Path for custom python modules
+pythonpathadd ~/.local/share/python/site-packages

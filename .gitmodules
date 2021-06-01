@@ -1,0 +1,6 @@
+[submodule "liquidprompt"]
+	path = liquidprompt
+	url = ./liquidprompt/
+[submodule "vim"]
+	path = vim
+	url = ./vim

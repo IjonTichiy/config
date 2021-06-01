@@ -1,0 +1,37 @@
+##!/usr/bin/bash
+################################################################################ 
+#                               bash alias
+################################################################################ 
+
+## User defined aliases go here
+########################################
+
+
+## Administrative commands
+########################################
+alias pac='sudo pacman -S'
+alias unpac='sudo pacman -R'
+alias term='alacritty'
+
+
+## Navigation
+########################################
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+
+alias ls='ls --color=auto'
+alias la='ls -a'
+alias ll='ls -l'
+alias lla='ls -la'
+
+## :q
+## super useful command to display input keys for X (e.g. for binds in .initrc)
+## alias key='sed -n l'
+
+
+## git
+########################################
+#alias git-ls='git ls-tree --full-tree -r --name-only HEAD'
+alias gitsub='git submodule'
+alias gitsuba='git submodule add'

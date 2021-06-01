@@ -1,0 +1,21 @@
+#!/usr/bin/bash
+
+# Make caps a modifier key -> see ~/.config/sway/config 
+export XKB_DEFAULT_OPTIONS=caps:escape
+
+# Global config directory
+export XDG_CONFIG_DIR=~/.config
+
+# Make waybar work properly
+export XDG_CURRENT_DESKTOP=Unity
+
+# Enable wayland support in firefox
+export MOZ_ENABLE_WAYLAND=1
+
+# source the local bashrc
+[[ -f ~/.bashrc ]] && . ~/.bashrc 
+
+# Run sway window manager
+sway &
+
+~/.local/share/python/scripts/inactive-windows-transparency.py &
