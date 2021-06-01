@@ -11,7 +11,7 @@ export ALACRITTYRC=$XDG_CONFIG_DIR/alacritty/alacritty.yml
 export BASHRC=~/.bashrc
 export BASH_PROFILE=~/.bash_profile
 export BASH_ALIAS=$XDG_CONFIG_DIR"/bash/alias"
-export BASH_HELPER=~/.local/share/bash/scripts/helper.sh
+export BASH_HELPER=$XDG_CONFIG_DIR/bash/helper
 
 # readline configuration file
 export INPUTRC=$XDG_CONFIG_DIR/readline/inputrc
@@ -27,6 +27,7 @@ export VIMRC=~/.vimrc
 export VIM_FILETYPES=$XDG_CONFIG_DIR/vim/filetype.vim
 export VIM_PLUGINS=$XDG_CONFIG_DIR/vim/plugins.vim
 export VIM_HELPERS=$XDG_CONFIG_DIR/vim/helper.vim
+
 
 
 # General

@@ -25,13 +25,13 @@ alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 
-## :q
-## super useful command to display input keys for X (e.g. for binds in .initrc)
-## alias key='sed -n l'
-
 
 ## git
 ########################################
 #alias git-ls='git ls-tree --full-tree -r --name-only HEAD'
 alias gitsub='git submodule'
 alias gitsuba='git submodule add'
+
+## dos2unix
+alias makeunix='find . -type f -print0 | xargs -0 dos2unix'
+
