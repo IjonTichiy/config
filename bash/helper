@@ -1,0 +1,31 @@
+#!/usr/bin/bash
+###############################################################################
+# Helper functions
+###############################################################################
+pathadd() {
+    [ -d "$1" ] && [[ ":$PATH:" != *"$1"* ]] && PATH="${PATH:+"$PATH:"}$1"
+}
+
+pythonpathadd() {
+    [ -d "$1" ] && [[ ":$PYTHONPATH:" != *"$1"* ]] && PYTHONPATH="${PYTHONPATH:+"$PYTHONPATH:"}$1"
+}
+
+# alias for git subcommand add
+gitsubadd() {
+    git submodule add https://github.com/$1 $2
+}
+
+# Install vim plugins
+pluginstall() {
+    git clone https://github.com/$1 $XDG_CONFIG_DIR/vim/plugins/$2
+    echo "git clone https://github.com/$1 $XDG_CONFIG_DIR/vim/plugins/$2" >> $XDG_CONFIG_DIR/vim/pluginlist
+}
+
+plugremove() {
+    git rm $XDG_CONFIG_DIR/vim/plugins/$1
+    k
+}
+
+# gitsub() {
+#     echo hello
+# }
