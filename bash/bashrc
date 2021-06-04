@@ -4,6 +4,12 @@
 ############################################################################### 
 # This is the user specific startup configuration for non-login shells
 
+# Set the XDG_CONFIG_DIR if it is not set
+
+if [[ -v XDG_CONFIG_DIR ]]; then
+    export XDG_CONFIG_DIR=~/.config
+fi
+
 # Configuration environment:
 #######################################
 export ALACRITTYRC=$XDG_CONFIG_DIR/alacritty/alacritty.yml
@@ -15,11 +21,14 @@ export BASH_HELPER=$XDG_CONFIG_DIR/bash/helper
 
 # readline configuration file
 export INPUTRC=$XDG_CONFIG_DIR/readline/inputrc
+
 export LIQUIDPROMPTRC=$XDG_CONFIG_DIR/liquidprompt/liquidpromptrc
 
 export SCREENRC=~/.config/screen/screenrc
 
 export SWAYRC=$XDG_CONFIG_DIR/sway/config
+
+export I3RC=$XDG_CONFIG_DIR/i3/config
 
 export TRIDACTYLRC=$XDG_CONFIG_DIR/tridactyl/tridactylrc
 
@@ -27,7 +36,6 @@ export VIMRC=~/.vimrc
 export VIM_FILETYPES=$XDG_CONFIG_DIR/vim/filetype.vim
 export VIM_PLUGINS=$XDG_CONFIG_DIR/vim/plugins.vim
 export VIM_HELPERS=$XDG_CONFIG_DIR/vim/helper.vim
-
 
 
 # General
@@ -94,9 +102,10 @@ pathadd ~/.local/share
 pathadd ~/.local/share/python/scripts
 
 # liquidprompt prefix to show running process in GNU screen window name
-LP_PS1_PREFIX="\[\\033k\\033\\\\\]"
+# LP_PS1_PREFIX="\[\\033k\\033\\\\\]"
 
 # Python specific
 ############################################################################### 
 # Path for custom python modules
 pythonpathadd ~/.local/share/python/site-packages
+
