@@ -341,13 +341,13 @@ font:
 # The value `0.0` is completely transparent and `1.0` is opaque.
 background_opacity: 0.5
 
-#selection:
+selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
-  #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
+  save_to_clipboard: true
 
 #cursor:
   # Cursor style
@@ -810,3 +810,36 @@ background_opacity: 0.5
 
   # Print all received window events.
   #print_events: false
+colors:
+  # COLORSCHEME: base16-tube.yml
+  primary:
+    background: '0x231f20'
+    foreground: '0xd9d8d8'
+
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '0x231f20'
+    cursor: '0xd9d8d8'
+
+  # Normal colors
+  normal:
+    black: '0x231f20'
+    red: '0xee2e24'
+    green: '0x00853e'
+    yellow: '0xffd204'
+    blue: '0x009ddc'
+    magenta: '0x98005d'
+    cyan: '0x85cebc'
+    white: '0xd9d8d8'
+
+  # Bright colors
+  bright:
+    black: '0x737171'
+    red: '0xf386a1'
+    green: '0x1c3f95'
+    yellow: '0x5a5758'
+    blue: '0x959ca1'
+    magenta: '0xe7e7e8'
+    cyan: '0xb06110'
+    white: '0xffffff'
+
