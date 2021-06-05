@@ -1,0 +1,6 @@
+include ~/.cache/wal/colors-sway
+
+default_border none
+
+# client.focused "$color000" "#FFFFFF00" "#FFFFFF00" "#FF0000" "#00000000"
+# client.focused_inactive "$color000" "#FFFFFF00" "#FFFFFF00" "#FF000000" "#00000000"
