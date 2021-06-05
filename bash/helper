@@ -3,11 +3,11 @@
 # Helper functions
 ###############################################################################
 pathadd() {
-    [ -d "$1" ] && [[ ":$PATH:" != *"$1"* ]] && PATH="${PATH:+"$PATH:"}$1"
+    [ -d "$1" ] && [[ ":$PATH:" != *"$1"* ]] && export PATH="${PATH:+"$PATH:"}$1"
 }
 
 pythonpathadd() {
-    [ -d "$1" ] && [[ ":$PYTHONPATH:" != *"$1"* ]] && PYTHONPATH="${PYTHONPATH:+"$PYTHONPATH:"}$1"
+    [ -d "$1" ] && [[ ":$PYTHONPATH:" != *"$1"* ]] && export PYTHONPATH="${PYTHONPATH:+"$PYTHONPATH:"}$1"
 }
 
 # alias for git subcommand add
