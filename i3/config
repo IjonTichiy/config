@@ -7,10 +7,8 @@
 # General
 ###############################################################################
 #
-exec --no-startup-id setxkbmap -option caps:hyper
 
 # Modifier Keys
-set $alt mod1
 set $cap Mod3
 set $mod Mod4
 
@@ -25,8 +23,7 @@ set $up k
 set $right l
 
 # font
-font pango:DejaVu Sans Mono 8
-
+font pango:Source Code Pro 8
 
 # preferred terminal
 set $terminal 'alacritty'
@@ -43,18 +40,22 @@ set $applauncher "rofi -modi drun,run -show drun"
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+bindsym $cap+c reload
 
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+bindsym $cap+r restart
 
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # application launcher
+bindsym $mod+d exec $applauncher
 bindsym $cap+d exec $applauncher
 
 # Start your browser
 bindsym $mod+b exec firefox 
+bindsym $cap+b exec firefox 
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
@@ -65,25 +66,13 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 
 bindsym $md5+Return exec $terminal
 
-# Startup
-###############################################################################
-
-# The combination of xss-lock, nm-applet and pactl is a popular choice, so
-# they are included here as an example. Modify as you see fit.
-
-# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
-# screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
-
-# NetworkManager is the most popular way to manage wireless networks on Linux,
-# and nm-applet is a desktop environment-independent system tray GUI for it.
-exec --no-startup-id nm-applet
 
 # start a terminal
 bindsym $mod+Return exec $terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+bindsym $cap+q kill
 
 # Navigation
 #######################################
@@ -210,3 +199,21 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Startup
+###############################################################################
+
+# The combination of xss-lock, nm-applet and pactl is a popular choice, so
+# they are included here as an example. Modify as you see fit.
+
+# xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
+# screen before suspend. Use loginctl lock-session to lock your screen.
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+
+# NetworkManager is the most popular way to manage wireless networks on Linux,
+# and nm-applet is a desktop environment-independent system tray GUI for it.
+exec --no-startup-id nm-applet
+
+
+exec --no-startup-id setxkbmap -option caps:hyper
+exec --no-startup-id xmodmap ~/.xmodmap
