@@ -6,7 +6,7 @@
 
 # Set the XDG_CONFIG_DIR if it is not set
 
-if [[ -v XDG_CONFIG_DIR ]]; then
+if [[ -z ${XDG_CONFIG_DIR} ]]; then
     export XDG_CONFIG_DIR=~/.config
 fi
 
